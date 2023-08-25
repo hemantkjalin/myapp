@@ -31,7 +31,7 @@ export const Header = () => {
       >
         <div className="container-fluid">
           <Link to ="/" className="navbar-brand">
-            <img src="img/footer-logo.png" alt="logo" style={{width: "160px"}} />
+            <img src="img/footer-logo.png" alt="logo" style={{width: "215px"}} />
           </Link>
           <button
             className="navbar-toggler"
@@ -74,29 +74,7 @@ export const Header = () => {
                 </div>
               </li>
               <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Industries
-                </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </div>
+                <Link to ="/industries" className="nav-link" >Industries</Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -138,22 +116,15 @@ export const Header = () => {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Pages
+                  Resources
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <Link to="/about" className="dropdown-item">
-                    About
+                  <Link to="/" className="dropdown-item">
+                    Blog
                   </Link>
-                  <Link to="/industries" className="dropdown-item">
-                    Industries
+                  <Link to="/" className="dropdown-item">
+                    FAQ
                   </Link>
-                  <Link to="/services" className="dropdown-item">
-                    Services
-                  </Link>
-                  <Link to="/team" className="dropdown-item">
-                    Team
-                  </Link>
-                  
                 </div>
               </li>
               <li className="nav-item">

@@ -916,6 +916,7 @@ nav ul li:hover::after {
 nav ul li.nav-item a {
   position: relative;
   z-index: 9;
+  font-size: 18px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -2468,4 +2469,32 @@ section.no-code-develop-services .img-box img {
 
 .industries-worked-data div img {
   width: 100%;
+}
+
+
+/*---------IT Consulting--------*/
+
+section.it-consulting .design-tools-card {
+  transition: all .5s ease;
+}
+
+section.it-consulting .design-tools-card ul {
+  display: none;
+}
+
+section.it-consulting .design-tools-card:hover ul {
+  display: block;
+  list-style: none;
+}
+
+section.it-consulting .design-tools-card ul li::before {
+  content: "-";
+  position: absolute;
+  left: 2%;
+}
+
+section.it-consulting .design-tools-card:hover ul li {
+  font-size: 20px;
+  color: var(--light-color);
+  text-align: left;
 }
